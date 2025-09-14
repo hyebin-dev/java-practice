@@ -6,7 +6,7 @@ public class CountCharacter {
 
     public static void main(String[] args) {
     	System.out.println("<문자 등장 횟수 세기>");
-        // 9단계: 문자 등장 횟수 세기 (대소문자 무시)
+        // 9단계(기초): 문자 등장 횟수 세기 (대소문자 무시)
         // 문제: 사용자로부터 문자열과 한 글자를 입력받아,
         //      문자열에서 해당 글자가 몇 번 등장하는지 출력하는 프로그램을 작성하세요.
         //      (예: 문자열 "Hello World", 문자 'l' -> 3)
@@ -32,3 +32,4 @@ public class CountCharacter {
     }
 
 }
+
