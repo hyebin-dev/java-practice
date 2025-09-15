@@ -1,0 +1,15 @@
+package week02.basic;
+
+public class DeskTest {
+
+	public static void main(String[] args) {
+		System.out.println("<기본 생성자로 초기 메시지 출력>");
+//		6단계(기초): 기본 생성자로 초기 메시지 출력
+//		문제: Desk.java 클래스를 만들고, 객체가 생성될 때 "새로운 책상이 조립되었습니다."라는 메시지를 출력하는
+//		기본 생성를 추가하세요. DeskTest.java에서 Desk 객체를 생성하여 메시지가 출력되는지 확인하세요.
+//		핵심 사고: 객체 생성 시 자동으로 호출되는 생성자의 기본 역할을 이해합니다.
+//		힌트: 클래스, 기본 생성자, 객체화(new), 출력
+		new Desk();
+	}
+
+}
