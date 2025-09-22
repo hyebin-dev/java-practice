@@ -44,13 +44,13 @@ public class SetMapTreeSetRange {
             int max = sorted.last(); // 맨 뒤 키 값(가장 큰 수)
             System.out.println("맨 앞 원소: " + min + ", 마지막 원소: " + max);
 
-            int start = 3; // 시작 할 위치
-            int end = 8; // 끝 낼 위치
-            SortedSet<Integer> range = sorted.subSet(start, end); // 3부터 8까지
+            int start = 3; // 시작할 경계값(포함)
+            int end = 8; // 끝 경계값(미포함)
+            SortedSet<Integer> range = sorted.subSet(start, end); // [3, 8) (3 이상 8 미만)
             System.out.println(start + " <= x < " + end + " : " + range);
 
-            System.out.println("처음부터 <= x < " + end + ": " + sorted.headSet(end)); // 처음부터 8까지
-            System.out.println(start + "<= x <= 마지막까지 " + sorted.tailSet(start)); // 3부터 마지막까지
+            System.out.println("처음부터 <= x < " + end + ": " + sorted.headSet(end)); // [min, 8) (처음부터 8 미포함)
+            System.out.println(start + " ≤ x ≤ " + max + " : " + sorted.tailSet(start)); // 3부터 마지막까지
         }
 
         int keySum = 0;
